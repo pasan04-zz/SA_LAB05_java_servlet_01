@@ -1,14 +1,7 @@
 package Services;
 
-public class Authentication {
+public interface Authentication {
 	
-	
-	private static Authentication singleton = new Authentication();
-
-	
-	private Authentication() {
-		// TODO Auto-generated constructor stub
-	}
 	
 	
 	
