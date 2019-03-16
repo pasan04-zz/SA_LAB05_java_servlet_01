@@ -1,6 +1,7 @@
 package Controller;
 
 import java.io.IOException;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -9,9 +10,8 @@ import javax.servlet.http.HttpServletResponse;
 
 import Model.User;
 
-/**
- * Servlet implementation class UserControl
- */
+
+
 @WebServlet("/UserControl")
 public class UserControl extends HttpServlet {
 	private static final long serialVersionUID = 1L;
@@ -34,18 +34,25 @@ public class UserControl extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		
-		User user1 = new User();
-		
- 		user1.setUsername( request.getParameter("username")); 
- 		user1.setPassword( request.getParameter("userpassword"));
+
 		
  		if(request.getParameter("username").equals("pasan") && request.getParameter("userpassword").equals("pasan123")){
  			
  			System.out.println("Successfully login to the system");
+ 			
+ 			User user1 = new User();
+ 			
+ 	 		user1.setUsername( request.getParameter("username")); 
+ 	 		user1.setPassword( request.getParameter("userpassword"));
+ 	 		
+ 	 		
+ 	 			
  		}
  		else{
  			System.out.println("Please enter valid username and password");
  		}
+ 		
+ 		
 		
 	}
 
