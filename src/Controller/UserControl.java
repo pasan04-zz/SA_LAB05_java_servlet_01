@@ -40,10 +40,10 @@ public class UserControl extends HttpServlet {
  			
  			System.out.println("Successfully login to the system");
  			
- 			User user1 = new User();
+ 			//User user1 = new User();
  			
- 	 		user1.setUsername( request.getParameter("username")); 
- 	 		user1.setPassword( request.getParameter("userpassword"));
+ 	 		//user1.setUsername( request.getParameter("username")); 
+ 	 		//user1.setPassword( request.getParameter("userpassword"));
  	 		
  	 		
  	 			

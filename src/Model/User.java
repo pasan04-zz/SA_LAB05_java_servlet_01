@@ -9,9 +9,20 @@ public class User {
 	public String username;
 	public String password;
 	
-	public User(){
+	
+	private static User singleton = new User( );
+	
+	private User() { }
+	
+	public static User getInstance( ) {
+		 return singleton;
 	}
 	
+	protected static void demoMethod( ) {
+		      System.out.println("singleton method called");
+	
+	}
+    
 	public String getFirstName() {
 		return firstName;
 	}
